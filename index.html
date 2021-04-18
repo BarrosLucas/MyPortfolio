@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PortLucas</title>
+	<link rel="stylesheet" href="css/index_style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+		    $("a").bind('click', function (e) {
+				var id = $(this).attr('href'),
+				    targetOffset = $(id).offset().top;
+
+				if(id=='my-resume'){
+
+				}
+				else{   
+					e.preventDefault();
+					$('html, body').animate({ 
+						scrollTop: targetOffset - 80
+					}, 500);
+				}
+		    });
+		});
+
+	</script>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark" style="padding-top: 20px; padding-right: 30px; padding-left: 30px; padding-bottom: 20px">
+		<a class="navbar-brand n" href=".content">Home</a>
+		
+		<ul class="navbar-nav ml-auto">
+	  		<li class="nav-item">
+	     		<a class="nav-link n" id="button" href="#aboutMe">About Me</a>
+	    	</li>
+	    
+	    	<li class="nav-item">
+	      		<a class="nav-link n" href="#myWorks">My Works</a>
+	    	</li>
+
+	    	<li class="nav-item">
+	      		<a class="nav-link n" href="#myInterests">My Abilities</a>
+	    	</li>
+
+	    	<li class="nav-item">
+	      		<a class="nav-link n" href="#spareTime">Spare Time</a>
+	    	</li>
+
+	    	<li class="nav-item">
+	      		<a class="nav-link n" href="my-resume" target="_blank">Resume</a>
+	    	</li>
+	  	</ul>
+	</nav>
+
+	<div class="content" style="padding-top: 200px">
+		<div align="center" class="lightItemContent itemContent">
+			<h1>Lucas Barros</h1>
+			<h6>Computer Technical and Software Developer</h5>
+		</div>
+
+		<div id="aboutMe" class="darkItemContent itemContent">
+			<h2>ABOUT ME</h2>
+			<br>
+			<table style="width:100%">
+			  <tr>
+			    <td style="width:300px;">
+			    	<img src="imgs/mypic.jpg" width="300" class="rounded" style="max-width: 100%; background-color:blue">
+			    </td>
+			    
+			    <td height="100%" valign="top"> 
+			    	<p id="text" style="margin-left: 0px; padding-left: 100px">Eu sou um estudante de Engenharia de Computação na Universidade Federal da Paraíba (UFPB). Meus estudos e trabalhos se concentram na área de Internet das Coisas (IoT) e desenvolvimento, amo empreendimento e inovação. 
+					<br>
+					Conheci a programação quando ingressei na escola técnica (o Instituto Federal de Alagoas), onde logo me apaixonei pela área e entrei de cara no mundo da tecnologia. Lá tive a oportunidade de conhecer e me aprofundar dentro da programação e da robótica.
+					<br>
+					Já tive diversas experiências de pesquisa e de mercado de trabalho, dentre as quais se destacam o Toddy (apelido carinhosamente dado ao robô que pertence à ferramenta computacional de apoio ao ensino de programação), que me rendeu muita experiência e aprendizado em programação Mobile e Robótica.
+					No mais, você pode saber mais sobre mim em meu resumo.</p>
+			    </td> 
+			  </tr>
+			 
+			</table>
+		</div>
+
+		<div id="myWorks" class="lightItemContent itemContent">
+			<h2>MY WORKS</h2>
+			<br>
+			<table>
+				<tr>
+					<td class="td-sections" width="60%">
+						<div class="grid-text">
+							<h5>Toddy Teddy Jhonny</h5>
+							<p>Este foi o nome dado ao robô desenvolvido por mim e alguns colegas que foi resultado de um projeto de pesquisa. Este robô é capaz de seguir instruções enviadas pelo aplicativo também desenvolvido por nós. O aplicativo recebe instruções, interpreta e envia ao <i>Tod</i>, que, por sua vez, caso o código não apresente erros, segue aos comandos. O que você vê na foto é um protótipo.</p>
+						</div>
+					</td>
+
+					<td class="td-sections">
+						<div>
+							<img src="imgs/tod.png" alt="Imagem 1" class="rounded img-works">
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<table>
+
+				<tr>
+					<td class="td-sections" align="right">
+						<div>
+							<img src="imgs/ifparatodos.png" alt="Imagem 1" class="rounded img-works" style="background-color: black">
+						</div>
+					</td>
+					<td class="td-sections" style="padding-left: 0px; width: 60%">
+						<div>
+							<h5>IF Para Todos</h5>
+							<p>Esse é um aplicativo especial. Foi o primeiro aplicativo que desenvolvi de forma completamente autônoma e conseguiu uma boa visibilidade, apesar de ainda ter deixado muito a desejar. Era visado para auxiliar alunos do ensino fundamental no estudo para o exame seletivo para ingressar no instituto.</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td class="td-sections" width="60%">
+						<div class="grid-text">
+							<h5>At Home</h5>
+							<p>É um aplicativo desenvolvido no início da pandemia. Pensando nas dificuldades que existem, sobretudo em um tempo onde deve-se existir um cuidado extra com a saúde física e mental, o aplicativo At Home foi desenvolvido em Flutter trazendo uma gama de atividades físicas, que podem ser adequadas conforme a sua necessidade.</p>
+						</div>
+					</td>
+
+					<td class="td-sections">
+						<div>
+							<img src="imgs/athome.png" alt="Imagem 1" class="rounded img-works">
+						</div>
+					</td>
+				</tr>
+			</table>
+			<table>
+
+				<tr>
+					<td class="td-sections" align="right">
+						<div>
+							<img src="imgs/freedyloading.png" alt="Imagem 1" class="rounded img-works" style="background-color: black">
+						</div>
+					</td>
+					<td class="td-sections" style="padding-left: 0px; width: 60%">
+						<div>
+							<h5>FreeDy</h5>
+							<p>Aplicativo para realizaçao de entregas. Ainda está em trabalho de desenvolvimento, em breve terei novidades ;)</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="myInterests" class="darkItemContent itemContent">
+			<h2>MY ABILITIES</h2>
+			<br>
+			<table>
+				<tr>
+					<td class="td-sections" align="right">
+						<div>
+							<img src="imgs/iot.png" alt="Imagem 1" class="rounded img-interests" style="background-color: black">
+						</div>
+					</td>
+					<td class="td-sections" style="padding-left: 0px; width: 60%">
+						<div>
+							<h5>IoT</h5>
+							<p>Tive um contato próximo dentro do projeto de pesquisa da universidade e desde então meu interesse só aumentou na área.</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-sections" align="right">
+						<div>
+							<img src="imgs/robotic.jpg" alt="Imagem 1" class="rounded img-interests" style="background-color: black">
+						</div>
+					</td>
+					<td class="td-sections" style="padding-left: 0px; width: 60%">
+						<div>
+							<h5>Robótica</h5>
+							<p>Desde o ensino médio venho aproximando o contato com o Hardware. Arduino foi a porta de entrada.</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-sections" align="right">
+						<div>
+							<img src="imgs/app.jpg" alt="Imagem 1" class="rounded img-interests" style="background-color: black">
+						</div>
+					</td>
+					<td class="td-sections" style="padding-left: 0px; width: 60%">
+						<div>
+							<h5>Desenvolvimento Mobile</h5>
+							<p>Programação Mobile se tornou para mim e cada vez mais vem se firmando como algo de extremo interesse.</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-sections" align="right">
+						<div>
+							<img src="imgs/fullstack.png" alt="Imagem 1" class="rounded img-interests" style="background-color: white">
+						</div>
+					</td>
+					<td class="td-sections" style="padding-left: 0px; width: 60%">
+						<div>
+							<h5>Full Stack</h5>
+							<p>Trabalhar de ponta a ponta, desde a modelagem, o design, até todo o funcionamento "por trás dos panos" é algo que gosto e ganho proficiência através de meus projetos.</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="spareTime" class="lightItemContent itemContent">
+			<h2>SPARE TIME</h2>
+			<br>
+			<table>
+				<tr>
+					<td class="td-sections" width="60%">
+						<div class="grid-text">
+							<h5>Atividades Físicas</h5>
+							<p>A prática de atividades físicas é algo novo pra mim, mas sem dúvidas incluo na minha principal atividade de lazer. Seja correr, seja ir para a academia ou mesmo se exercitar em casa, são atividades que melhoram minha saúde física e mental, além de tornar meu dia bem produtivo.</p>
+						</div>
+					</td>
+
+					<td class="td-sections">
+						<div>
+							<img src="imgs/training.png" alt="Imagem 1" class="rounded img-works">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-sections" width="60%">
+						<div class="grid-text">
+							<h5>Assistir</h5>
+							<p>Acho que ninguém resiste a um bom filme ou a uma boa série em fins de semana quando se é possível. Assistir é uma de minhas atividades preferidas, momento de relaxar a mente e descontrair.</p>
+						</div>
+					</td>
+
+					<td class="td-sections">
+						<div>
+							<img src="imgs/tv.png" alt="Imagem 1" class="rounded img-works">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-sections" width="60%">
+						<div class="grid-text">
+							<h5>Produzir</h5>
+							<p>As vezes, mesmo no momento de lazer, me sinto produtivo e resolvo fazer coisas de meu agrado, isto inclui programar, resolver problemas, pensar em estratégias de negócios para minhas ideias, etc...</p>
+						</div>
+					</td>
+
+					<td class="td-sections">
+						<div>
+							<img src="imgs/idea.jpg" alt="Imagem 1" class="rounded img-works">
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+    </div>
+
+
+	<footer id="myFooter">
+        <div class="container">
+            
+            <p class="footer-copyright">© 2019 Copyright - Lucas Barros</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100004793076309" target="_blank" class="social-icons"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lucasbarros_lfb/" target="_blank" class="social-icons"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/BarrosLucas/" target="_blank" class="social-icons"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lucas-b-0ab876105/" target="_blank" class="social-icons"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
