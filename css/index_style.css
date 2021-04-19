@@ -96,7 +96,7 @@
     padding-bottom: 50px;
 }
 
-#aboutMe, #myWorks, #myInterests, #spareTime{
+#aboutMe, #myWorks, #myInterests, #spareTime, #myJobs{
     padding-right: 200px;
     padding-left: 200px;
     padding-top: 50px;
@@ -133,17 +133,17 @@ p{
     text-align: left;
 }
 
-#ifparatodos:hover{
+#ifparatodos:hover, #bwnconsultoria:hover{
     font-size:110%;
     text-decoration: none;
 }
 
-#athome:hover{
+#athome:hover, #influu:hover{
     font-size:110%;
     text-decoration: none;
 }
 
-#tod:hover{
+#tod:hover, #happycode:hover{
     font-size:110%;
     text-decoration: none;   
 }
