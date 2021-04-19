@@ -132,3 +132,18 @@ p{
 .text-right{
     text-align: left;
 }
+
+#ifparatodos:hover{
+    font-size:110%;
+    text-decoration: none;
+}
+
+#athome:hover{
+    font-size:110%;
+    text-decoration: none;
+}
+
+#tod:hover{
+    font-size:110%;
+    text-decoration: none;   
+}
